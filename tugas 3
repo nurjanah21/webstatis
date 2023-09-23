@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pengembangan Web Tugas 3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body style="background-color: bisque;">
+    <h1 style="color: black; background-color: darksalmon;"><center>Belajar HTML5 Hari ke-3 <br>Sangat Menyenangkan</h1>
+    <h2 style="color: black; background-color: rgb(255, 208, 147);"><center>Mengenal Perpustakaan</h2>
+    <img src="images/Perpustakaan" width="400" height="200" style="float: left; margin-right: 10px; border-radius: 5px;"><p style="font-size: 17px;"><mark>Menurut UU No.43 Tahun 2007 Pasal 1 Ayat 1</mark> perpustakaan adalah institusi pengelola koleksi karya tulis, karya cetak, atau karya rekam secara profesional dengan sistem yang bagu guna memenuhi kebutuhan pendidikan, penelitian, pelestarian, informasi, dan rekreasi bagi para pemustaka. Menurut UU Perpustakaan pada Bab 1 pasal 1</mark> Perpustakaan adalah institusi yang mengumpulkan pengetahuan tercetak dan terekam, mengelolanya dengan cara khusus guna memenuhi kebutuhan intelektualitas para penggunanya melalui beragam cara interaksi pengetahuan. Tidak hanya memiliki koleksi buku, perpustakaan juga merupakan tempat penyimpanan mikrofilm, mikrofiche, tape audio, CD, LP, tape video, DVD, dan menyediakan fasilitas umum untuk mengakses gudang data CD-ROM dan internet. Saat ini, <mark>perpustakaan modern</mark> memiliki definisi yaitu sebagai tempat pemustaka untuk mengakses informasi dalam format apapun, baik yang tersimpan di dalam gedung perpustakaan maupun yang tidak tersimpan. Dalam perpustakaan modern ini selain kumpulan koleksi tercetak, sebagian koleksi perpustakaan ada di dalam <mark>perpustakaan digital</mark> atau dalam bentuk data yang dapat diakses lewat jaringan komputer.</p>
+    <p style="font-size: 17px;">Keberadaan perpustakaan tentu memiliki peran penting dalam pembangunan nasional. Pada dasarnya, perpustakaan tidak hanya berfungsi sebagai pusat simpanan yang hanya melayani pemustaka dalam hal koleksi buku, tetapi juga berperan dalam meningkatkan kualitas sumber daya manusia yang berdampak pada peningkatan kesejahteraan masyarakat Indonesia. <mark>Dalam pembangunan nasional perpustakaan memiliki tiga peran.</mark> Pertama, peran perpustakaan sebagai pusat ilmu pengetahuan dapat melahirkan inovasi maupun kreativitas. Kedua, peran perpustakaan sebagai pusat pemberdayaan masyarakat untuk mengembangkan potensi berbasis literasi. Ketiga, peran perpustakaan sebagai pusat kebudayaan. Perpustakaan memiliki kedudukan yang sama pentingnya dengan sekolah, tetapi perpustakaan dapat dimanfaatkan oleh siapa saja, mulai dari balita hingga lansia. Untuk itu, perpustakaan harus mengembalikan marwahnya, sebagai wahana belajar sepanjang hayat, tutur Kepala Bidang Kebudayaan, Direktorat Pendidikan Tinggi, IPTEK dan Kebudayaan Kementerian PPN/Bappenas, Didik Darmanto, dalam paparan Kebijakan RPJMN Perpustakaan 2020-2024, Rabu (31/07). <mark>Adapun jenis-jenis perpustakaan yaitu</mark> perpustakaan nasional, perpustakaan umum, perpustakaan khusus, perpustakaan perguruan tinggi, dan perpustakaan sekolah.</p>
+    <h2>Tujuan Perpustakaan</h2>
+    <ol type="1">
+        <li style="font-size: 17px;">Dapat mendidik dirinya sendiri secara berkesinambungan</li>
+        <li style="font-size: 17px;">Dapat tanggap dalam kemajuan pada berbagai lapangan ilmu pengetahuan, kehidupan sosial dan politik</li>
+        <li style="font-size: 17px;">Dapat memelihara kemerdekaan berfikir yang konstruktif untuk menjadi anggota keluarga dan masyarakat yang lebih baik</li>
+        <li style="font-size: 17px;">Dapat mengembangkan kemampuan berfikir kreatif, membina rohani dan dapat menggunakan kemampuannya untuk dapat menghargai hasil seni dan  budaya</li>
+        <li style="font-size: 17px;">Dapat meningkatkan tarap kehidupan sehari-hari dan lapangan pekerjaan</li>
+        <li style="font-size: 17px;">Dapat menjadi warga negara yang baik dan dapat berpartisipasi secara aktif dalam pembangunan nasional</li>
+        <li style="font-size: 17px;">Dapat menggunakan waktu senggang dengan baik yang bermanfaat bagi kehidupan pribadi sosial</li>
+    </ol>
+    <h2 style="color: black; background-color: rgb(255, 196, 118);"><center>Perpustakaan Digital</h2>
+    <img src="images/perpus digital.jpg" width="400" height="200" style="float: right; margin-left: 10px; border-radius: 5px;"><p style="font-size: 17px;"><mark>Perpustakaan digital</mark> adalah suatu perpustakaan yang menyimpan data baik itu buku (tulisan), gambar, suara dalam bentuk elektronik dan mendistribusikannya dengan menggunakan protokol elektronik melalui jaringan komputer. Istillah perpustakaan digital atau digital library sendiri mengandung pengertian sama dengan electronic library dan virtual library. Perkembangan dan kemajuan teknologi dalam bidang informasi, misalnya penemuan jaringan internet dan informasi digital, telah memberikan dampak positif yang sangat besar dalam dunia perpustakaan. Salah satu bentuk kemajuan perpustakaan di bidang teknologi informasi adalah pembangunan perpustakaan digital. <mark>Menurut Briang Lang dalam Qalyubi (2003:443), perpustakaan digital</mark> adalah penggunaan teknologi digital untuk memperoleh, menyimpan, melestarikan, dan menyediakan akses terhadap informasi dan materi-materi yang diterbitkan dalam bentuk digital atau didigitalisasikan dari bentuk tercetak, audio visual, dan bentuk-bentuk lainnya. Pembangunan perpustakaan digital mengakibatkan adanya perubahan sistem layanan informasi, awalnya menggunakan sistem layanan konvensional (manual) hingga berubah ke sistem layanan digital yang dibantu dengan perangkat program komputer, yaitu hardware, software, brainware, dan jaringan komputer yang memadai untuk membangun perpustakaan digital.
+    </p>
+    <p style="font-size: 17px;">Keberadaan perpustakaan digital menjadi pelengkap untuk perpustakaan yang masih menerapkan ketradisionalan, yang mana keduanya tidak harus dipisahkan, bahkan penting untuk berkoalisi guna semakin melengkapi satu sama lain, sehingga muncul paduan yang mempunyai keunggulan dalam menyediakan layanan kepada pengguna dalam tingkat yang lebih tinggi. Perpustakaan digital ini memberikan kesempatan kepada setiap orang yang ingin mengembangkan pengetahuannya, tanpa terbatas ruang dan waktu. <mark>Kelebihan penggunaan perpustakaan digital</mark> yaitu dengan tidak dibatasinya ruang dan waktu, sehingga kita bebas untuk mencari banyak informasi yang belum kita dapatkan atau yang sedang kita butuhkan, lalu  penggunaan informasinya lebih efisien dan lebih akurat, serta keaslian dokumen terjamin, juga dibantu dengan jaringan perpustakaan yang lebih luas akan semakin mempermudah pengguna dalam mencari informasi. <mark>Adanya  layanan perpustakaan digital </mark> berguna untuk mempermudah  pencarian  informasi  yang  ada  pada  koleksi  objek informasi  seperti  dokumen,  gambar,  dan  database  dalam  bentuk  format digital dengan tepat, cepat dan akurat serta dapat memberikan layanan berupa  layanan download koleksi buku digital  (e-book),  majalah  digital  (e-magazine),  jurnal  digital  (e-journal),  dan kumpulan artikel yang terdapat pada koleksi  perpustakaan digital lainnya.</p>
+    <h2>Manfaat Perpustakaan Digital</h2>
+    <ol type="1">
+        <li style="font-size: 17px;">Informasi yang didapatkan menjadi lebih cepat dan mudah</li>
+        <li style="font-size: 17px;">Koleksi perpustakaan yang cukup banyak</li>
+        <li style="font-size: 17px;">Terhindar dari kerusakan buku secara fisik</li>
+        <li style="font-size: 17px;">Untuk menyimpan data, informasi, dan hasil penelitian</li>
+        <li style="font-size: 17px;">Memudahkan proses belajar</li>
+    </ol>
+    <h2>5 Perpustakaan Dengan Koleksi Terbesar Di Indonesia</h2>
+    <table border="1" style="border: dashed; border-color: hotpink;">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Perpustakaan</th>
+                <th>Jumlah Koleksi</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Perpustakaan Nasional</td>
+                <td>Sekitar 7.774.375 eksemplar</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Perpustakaan Soeman HS-Pekan Baru</td>
+                <td>Sekitar 312.244 eksemplar</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Perpustakaan Universitas Indonesia</td>
+                <td>Sekitar 865.910 eksemplar</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Perpustakaan Institut Teknologi Bandung</td>
+                <td>Sekitar 273.980 eksemplar</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Perpustakaan St. Ignatius</td>
+                <td>Sekitar 161.890 eksemplar</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <p style="font-size: 17px;">Sumber Referensi Belajar HTML5: <a href="https://www.w3schools.com/">W3Scools</a></p>
+    <p style="font-size: 17px;">Yang Mengerjakan Tugas Ini :</p>
+    <table>
+        <tr>
+            <td><b>Nama Lengkap</b></td>
+            <td><b>:</b></td>
+            <td><b>Nurjanah</b></td>
+        </tr>
+        <tr>
+            <td><b>NIM</b></td>
+            <td><b>:</b></td>
+            <td><b>11210251000013</b></td>
+        </tr>
+    </table>
+    <img src="images/nurjanah.jpg" width="230" height="300">
+</body>
+</html>
