@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PERPUSTAKAAN UIN JAKARTA</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style> h1 {text-align: center;} 
+    img {float: left;}
+    table, th, td {border: 1px sienna;border-radius: 10px;}
+    .section {
+        background-color: aqua;
+    }
+    #DENAHGEDUNG {
+        background-color: cornflowerblue;
+        color: black;
+        padding: 20px;
+        text-align: center;
+    }
+    </style>
+    
+</head>
+<body><body style="background-color: gray;"></body>
+<h1 style="background-color: blue;font-family: 'Times New Roman'; color: white;">PERPUSTAKAAN PUSAT UIN JAKARTA</h1>
+<h2>PROFIL PERPUSTAKAAN</h2>
+<p style="text-align: justify;font-size: 20px;"><img src="images/Perpustakaan" width="400" height="200" style="margin-right: 10px;"><b> <i>Perpustakaan UIN</i> sejarah perpus uin</p>
+<p style="text-align: justify; font-size: 20px;">lanjutan sejarah uin </p>
+
+<!--Block Inline-->
+<address>Website Perpustakaan: <a href="https://perpus.uinjkt.ac.id/">Perpus Pusat UIN JKT</a></address>
+<br>
+
+<!--List-->
+<h2>Jam Layanan Perpustakaan</h2>
+<dl>
+    <dt style="font-size: large;"><b>Senin-Kamis</b></dt>
+    <dd>Buka 08.30 - 16.00</dd>
+    <dd>Istirahat 11.00-13.30</dd>
+    <br>
+    <dt style="font-size: large;"><b>Jumat</b></dt>
+    <dd>08.30 - 16.30</dd>
+    <dd>Istirahat 11.00 - 13.30</dd>
+    <br>
+    <dt style="font-size: large;"><b>Sbtu/Hari Libur</b></dt>
+    <dd>- Tutup</dd>
+</dl>
+<h2>Layanan Perpustakaan</h2>
+<ol>
+    <li>Layanan Sirkulasi</li>
+    <li>Layanan Multimedia</li>
+</ol>
+<ul>
+    <li>Buku Teks</li>
+    <li>Jurnal</li>
+    <li>Majalah</li>
+</ul>
+<hr>
+
+<!--Table-->
+<h2>E-RESOURCE</h2>
+<table>
+    <tr>
+        <th>E-RESOURCE</th>
+        <th>Penjelasan</th>
+    </tr>
+    <tr>
+        <td>Jstor</td>
+        <td>Penjelasan JStor</td>
+    </tr>
+    <tr>
+        <td>Emerald Insight</td>
+        <td>Penjelasan Emerald Insight</td>
+    </tr>
+</table>
+
+<!--ID-->
+
+</body>
+</html>
