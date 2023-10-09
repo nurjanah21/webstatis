@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+    image-resolution: 100%;
+}
+body {
+    background-color: rgb(245, 229, 211);
+    background-image: url(images/backround3.crdownload);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    color: gray;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    margin: 40px 30px;
+}
+h2 {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: darkslategrey;
+}
+p {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
+    padding: 20px;
+    width: 900px;
+    margin: 30px auto;
+}
+d1 {
+    font-size: 25px;
+    line-height: 30px;
+}
+dt{
+    font-family: 'Lucida Sans';
+    background-color: gray;
+    margin-top: 30px;
+    padding: 5px;
+}
+dd {
+    font-family: monospace;
+    background-color: beige;
+    width: 100%;
+    height: 100%;
+    text-indent: 40px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: underline;
+    color: blanchedalmond;
+    text-transform: capitalize;
+    line-height: 30px;
+    padding: 20px;
+}
+.MuseumTerbesardiIndonesia {
+    width: 900px;
+    margin: 30px auto;
+}
+d1 img {
+    width: 200px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin: 10px 20px 10px 0px;
+    padding: 10px;
+    background-color: beige;
+    border-top-left-radius: 50px;
+    border-radius: 100px;
+}
+.clear {
+    clear: left;
+}
+.footer {
+    margin-left: 100px;
+}
