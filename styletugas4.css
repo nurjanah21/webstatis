@@ -71,12 +71,12 @@ a {
 d1 img {
     width: 200px;
     float: left;
-    margin-top: 10px;
-    margin-right: 20px;
+    /*margin-top: 10px;
+    margin-right: 20px;*/
     margin: 10px 20px 10px 0px;
     padding: 10px;
     background-color: beige;
-    border-top-left-radius: 50px;
+    /*border-top-left-radius: 50px;*/
     border-radius: 100px;
 }
 .clear {
