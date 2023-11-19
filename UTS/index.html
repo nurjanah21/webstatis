@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Menantea</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,100;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Feather Icons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!--My Style-->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+
+  <style>
+    :root {
+      --primary: rgb(0, 97, 104);
+
+      --bg: rgb(99, 178, 184);
+    }
+
+    * {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      outline: none;
+      border: none;
+      text-decoration: none;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: var(--bg);
+      color: #fff;
+    }
+
+    /*Navbar*/
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.4rem 7%;
+      background-color: rgb(99, 178, 184);
+      border-bottom: 1px solid rgb(0, 97, 104);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+    }
+
+    .navbar .navbar-logo {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      font-style: italic;
+    }
+
+    .navbar .navbar-logo span {
+      color: var(--primary);
+    }
+
+    .navbar .navbar-nav a {
+      color: #fff;
+      display: inline-block;
+      font-size: 1.3rem;
+      margin: 0 1rem;
+    }
+
+    .navbar .navbar-nav a:hover {
+      color: var(--primary);
+    }
+
+    /*.navbar .navbar-nav a::after {
+      content: "";
+      display: block;
+      padding-bottom: 0.5rem;
+      border-bottom: 0, 1rem solid var(--primary);
+      transform: scaleX(0);
+      transition: 0.2s linear;
+    }
+
+    .navbar .navbar-nav a:hover::after {
+      transform: scaleX(1);
+    }*/
+
+    .navbar .navbar-extra a {
+      color: #fff;
+      margin: 0 0.5rem;
+    }
+
+    .navbar .navbar-extra a:hover {
+      color: var(--primary);
+    }
+
+    #tea-menu {
+      display: none;
+    }
+
+    /*Navbar search form*/
+    .navbar .search-form {
+      position: absolute;
+      top: 100%;
+      right: 7%;
+      background-color: #fff;
+      will-change: 50rem;
+      height: 5rem;
+      display: flex;
+      align-items: center;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: 0.3s;
+    }
+
+    .navbar .search-form.active {
+      transform: scaleY(1);
+    }
+
+    .navbar .search-form input {
+      height: 100%;
+      width: 100%;
+      font-size: 1.6rem;
+      color: var(--bg);
+      padding: 1rem;
+    }
+
+    .navbar .search-form label {
+      cursor: pointer;
+      font-size: 2rem;
+      margin-right: 1.5rem;
+      color: var(--bg);
+    }
+
+    /*Hero Section*/
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background-image: url("images/menantea-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 30%;
+      bottom: 0;
+      background: linear-gradient(0deg, rgb(99, 178, 184) 8% rgb(0, 97, 104));
+    }
+
+    .hero .content {
+      padding: 1.4rem 7%;
+      max-width: 60rem;
+    }
+
+    .hero .content h1 {
+      font-size: 5em;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgb(0, 195, 255);
+      line-height: 1.2;
+    }
+
+    .hero .content h1 span {
+      color: var(--primary);
+    }
+
+    .hero .content p {
+      font-size: 1.6rem;
+      color: #fff;
+      margin-top: 1rem;
+      line-height: 1.4;
+      font-weight: 100;
+      text-shadow: 1px 1px 3px rgb(0, 195, 255);
+      mix-blend-mode: difference;
+    }
+
+    .hero .content .cta {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 1rem 3rem;
+      font-size: 1.4rem;
+      color: #fff;
+      background-color: var(--primary);
+      border-radius: 0.5rem;
+      box-shadow: 1px 1px 3px rgb(0, 195, 255);
+    }
+
+    /*About Section*/
+    .about,
+    .menu,
+    .contact {
+      padding: 7rem 7% 1.4rem;
+    }
+
+    .about h2,
+    .menu h2,
+    .contact h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .about h2 span,
+    .about h3 span,
+    .menu h2 span,
+    .contact h2 span {
+      color: var(--primary);
+    }
+
+    .about .row {
+      display: flex;
+    }
+
+    .about .row .about-img {
+      flex: 1 1 45rem;
+    }
+
+    .about .row .about-img img {
+      width: 100%;
+    }
+
+    .about .row .content {
+      flex: 1 1 35rem;
+      padding: 0 1rem;
+    }
+
+    .about .row .content h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .about .row .content p {
+      margin-bottom: 0.8rem;
+      font-size: 1.3rem;
+      font-weight: 100;
+      line-height: 1.6;
+    }
+
+    .menu p {
+      font-size: 1.2rem;
+    }
+
+    /*Menu Section*/
+    .menu h2,
+    .contact h2 {
+      margin-bottom: 1rem;
+    }
+    .menu p,
+    .contact p {
+      text-align: center;
+      max-width: 30rem;
+      margin: auto;
+      font-weight: 100;
+      line-height: 1.6;
+    }
+
+    .menu .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 5rem;
+      justify-content: center;
+    }
+
+    .menu .row .menu-card {
+      text-align: center;
+      padding-bottom: 4rem;
+    }
+
+    .menu .row .menu-card img {
+      border-radius: 50%s;
+      height: 70%;
+      width: 60%;
+    }
+
+    .menu .row .menu-card .menu-card-tittle {
+      margin-top: 1rem auoto 0.5rem;
+    }
+
+    /*Contact Section*/
+    .contact .row {
+      display: flex;
+      margin-top: 2rem;
+      background-color: var(--primary);
+    }
+
+    .contact .row .map {
+      flex: 1 1 45rem;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .contact .row form {
+      flex: 1 1 45rem;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .contact .row form .input-group {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+      background-color: var(--primary);
+      border: 1px solid #eee;
+      padding-left: 2rem;
+    }
+
+    .contact .row form .input-group input {
+      width: 100%;
+      padding: 2rem;
+      font-size: 1.7rem;
+      background: none;
+      color: #fff;
+    }
+
+    .contact .row form .btn {
+      margin-top: 3rem;
+      display: inline-block;
+      padding: 1rem 3rem;
+      font-size: 1.7rem;
+      color: #fff;
+      background-color: var(--bg);
+      cursor: pointer;
+    }
+
+    /*Footer*/
+    footer {
+      background-color: var(--primary);
+      text-align: center;
+      padding: 1rem 0 3rem;
+      margin-top: 3rem;
+    }
+
+    footer .socials {
+      padding: 1rem 0;
+    }
+
+    footer .socials a {
+      color: #fff;
+      margin: 1rem;
+    }
+
+    footer .socials a:hover,
+    footer .links a:hover {
+      color: var(--bg);
+    }
+
+    footer .links {
+      margin-bottom: 1.4rem;
+    }
+
+    footer .links a {
+      color: #fff;
+      padding: 0.7rem 1rem;
+    }
+
+    footer .credit {
+      font-size: 0.9rem;
+    }
+
+    footer .credit a {
+      color: var(--bg);
+      font-weight: 700;
+    }
+
+    /*Media Queries*/
+
+    /*Laptop*/
+    @media (max-width: 1366px) {
+      html {
+        font-size: 75%;
+      }
+    }
+
+    /*Tablet*/
+    @media (max-width: 768px) {
+      html {
+        font-size: 62.5%;
+      }
+
+      #tea-menu {
+        display: inline-block;
+      }
+
+      .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #fff;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+      }
+
+      .navbar .navbar-nav.active {
+        right: 0;
+      }
+
+      .navbar .navbar-nav a {
+        color: var(--bg);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+      }
+
+      .navbar .navbar-nav a::after {
+        transform-origin: 0 0;
+      }
+
+      .navbar .navbar-nav a:hover::after {
+        transform: scaleX(0.2);
+      }
+
+      .navbar .search-form {
+        width: 90%;
+        right: 2rem;
+      }
+
+      .about .row {
+        flex-wrap: wrap;
+      }
+
+      .about .row .about-img img {
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .about .row .content {
+        padding: 0;
+      }
+
+      .about .row .content h3 {
+        margin-top: 1rem;
+        font-size: 2rem;
+      }
+
+      .about .row .content p {
+        font-size: 1.5rem;
+      }
+
+      .menu p {
+        font-size: 1.2rem;
+      }
+
+      .contact .row {
+        flex-wrap: wrap;
+      }
+
+      .contact .row .map {
+        height: 30rem;
+      }
+
+      .contact .row form {
+        padding-top: 0;
+      }
+    }
+
+    /*Mobile Phone*/
+    @media (max-width: 450px) {
+      html {
+        font-size: 55%;
+      }
+    }
+  </style>
+
+  <body>
+    <!--Navbar start-->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Menan<span>tea</span></a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="tea-menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- Search Form start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Search Form end -->
+    </nav>
+    <!--Navbar end-->
+
+    <!--Hero Section start-->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Hidup Sehat Dengan <span>Menantea</span></h1>
+        <p>Teh Buah Paling Enak</p>
+        <a href="#" class="cta">Dapatkan Sekarang</a>
+      </main>
+    </section>
+    <!--Hero Section end-->
+
+    <!--About Section start-->
+    <section id="about" class="about">
+      <h2>About<span> Us</span></h2>
+
+      <div class="row">
+        <div class="about img">
+          <img
+            src="images/menantea-kumaw.jpg"
+            alt="Tentang Kami"
+            width="400"
+            height="200"
+            style="float: left; margin-right: 10px; border-radius: 5px"
+          />
+        </div>
+        <div class="content">
+          <h3><span>About Company </span><br />Menantea Group</h3>
+          <p>
+            Merupakan Multi Brand F&B Company hasil kolaborasi antara Jerome
+            Polin, Jehian Panangian Sijabat, Hendy Setiono, Sylvia Surya dan
+            Bisma Adi Putra Memiliki 2 brand yaitu Menantea dan juga Kumaw Ramen
+            yang berkolaborasi dengan Alshad Ahmad. Tersebar di lebih dari 60
+            kota dan 140 cabang.
+          </p>
+          <p>
+            Menantea adalah minuman teh dengan buah pilihan yang memiliki harga
+            jual terjangkau. Memiliki pilihan menu snack yang beragam dari
+            kentang goreng, chicken nugget, hingga cireng, membuat customer bisa
+            menkmati kombinasi antara teh buah dingin yang manis dengan snack
+            panas gurih yang nikmat. Kumaw Ramen adalah Brand Ramen Kering
+            (Tanpa kuah), ramen naked dan tempura yang memiliki konsep unik
+            dengan menu ‘Dry Ramen’ yang memiliki rasa sesuai cita rasa
+            Indonesia dan pastinya halal.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--About Section end-->
+
+    <!--Menu Section Start-->
+    <section id="menu" class="menu">
+      <h2><span>Menu</span> List</h2>
+      <p>Solusi yang Tepat untuk Lapar dan Haus Kita</p>
+
+      <div class="row">
+        <div class="menu-card">
+          <img
+            src="images/Vanilla-Milk-Tea.jpg"
+            alt="Vanilla Milk Tea"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle">Vanilla Milk Tea</h3>
+          <p class="menu-card-price">Rp 18K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="images/lychee-tea.jpg"
+            alt="Lychee Tea"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle">Lechee Tea</h3>
+          <p class="menu-card-price">Rp 18K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="images/caramel-milk-tea.jpg"
+            alt="Caramel Milk Tea"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle">Caramel Milk Tea</h3>
+          <p class="menu-card-price">Rp 18K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="images/matemateaka.jpg"
+            alt="Matemateaka"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle">Matemateaka</h3>
+          <p class="menu-card-price">Rp 25K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="images/oreo-milk-tea.jpg"
+            alt="Oreo Milk Tea"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle">Oreo Milk Tea</h3>
+          <p class="menu-card-price">Rp 25K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="images/Caramel-Chizu-Popukon.jpg"
+            alt="Caramel Chizu Popukon"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle">Caramel Chizu Popukon</h3>
+          <p class="menu-card-price">Rp 25K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="images/refresh-fruit-greentea.jpg"
+            alt="refresh fruit greentea"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle">Refresh Fruit Greentea</h3>
+          <p class="menu-card-price">Rp 28K</p>
+        </div>
+        <div class="menu-card">
+          <img src="images/integral.jpg" alt="Integral" class="menu-card-img" />
+          <h3 class="menu-card-tittle">Integral</h3>
+          <p class="menu-card-price">Rp 28K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="images/Chicken-Bulgogi-Rice.jpg"
+            alt="Chicken Bulgogi Rice"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle">Chicken Bulgogi Rice</h3>
+          <p class="menu-card-price">Rp 25K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="images/Chuffa-Rage-Rice.jpg"
+            alt="Chuffa Rage Rice"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle">Chuffa Rage Rice</h3>
+          <p class="menu-card-price">Rp 25K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="images/Jinoramen-Spicy.jpg"
+            alt="Jinoramen Spicy"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle">Jinoramen Spicy</h3>
+          <p class="menu-card-price">Rp 25K</p>
+        </div>
+        <div class="menu-card">
+          <img src="images/Mala-Men.jpg" alt="Mala Men" class="menu-card-img" />
+          <h3 class="menu-card-tittle">Mala Men</h3>
+          <p class="menu-card-price">Rp 25K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="images/Spicy-Valkyrice.jpg"
+            alt="Spicy Valkyrice"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle">Spicy Valkyrice</h3>
+          <p class="menu-card-price">Rp 25k</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="images/Mala-Kuamen.jpg"
+            alt="Mala Kuamen"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle">Mala Kuamen</h3>
+          <p class="menu-card-price">Rp 25K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="images/Pidis-Jiwi-Men.jpg"
+            alt="Pidis Jiwi Men"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle">Pidis Jiwi Men</h3>
+          <p class="menu-card-price">Rp 25K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="images/Curawr-Men.jpg"
+            alt="Curawr Men"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle">Curawr Men</h3>
+          <p class="menu-card-price">Rp 25K</p>
+        </div>
+      </div>
+    </section>
+    <!--Menu Section end-->
+
+    <!--Contact Section start-->
+    <section id="contact" class="contact">
+      <h2>Contact <span>Us</span></h2>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.698457962448!2d106.75490177118155!3d-6.3032932797310774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69efbf57a98c7d%3A0x1ec0473ce0683263!2sMenantea%20Ir%20Juanda%20Ciputat!5e0!3m2!1sid!2sid!4v1700149424739!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="no hp" />
+          </div>
+          <div class="input-group">
+            <i data-feather="edit-2"></i>
+            <input type="text" placeholder="ulasan" />
+          </div>
+          <button onclick="myFunction()" type="submit" class="btn">
+            Kirim Pesan
+          </button>
+
+          <p id="demo"></p>
+          <script>
+            function myFunction() {
+              var txt;
+              if (confirm("Pesan Terkirim!")) {
+                txt = "You Pressed Ok!";
+              } else {
+                txt = "You Pressed Cancel!";
+              }
+              document.getElementById("demo").innerHTML = txt;
+            }
+          </script>
+        </form>
+      </div>
+    </section>
+    <!--Contact Section end-->
+
+    <!--Footer start-->
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/menantea.toko/"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://twitter.com/tokomenantea"
+          ><i data-feather="twitter"></i
+        ></a>
+        <a href="https://web.facebook.com/tokomenantea/?_rdc=1&_rdr"
+          ><i data-feather="facebook"></i
+        ></a>
+      </div>
+
+      <div class="credit">
+        <p>
+          Jl. Ir H. Juanda No.107, Cempaka Putih, Ciputat Timur, Tangerang
+          Selatan
+        </p>
+        <br />
+        <a href="https://menantea.co.id/"
+          >Klik Untuk Mendapatkan Info Lebih Lanjut</a
+        ><br /><br />
+        <p>Created by Nurjanah. | &copy; 2023.</p>
+      </div>
+    </footer>
+    <!--Footer end-->
+
+    <!--Feather Icons-->
+    <script>
+      feather.replace();
+    </script>
+
+    <!--My Javascript-->
+    <script src="script.js"></script>
+  </body>
+</html>
